@@ -51,14 +51,14 @@ export default function Knowledge() {
           <div className="flex items-center title justify-center col-span-2 text-center">
             <Computer />
             <h2 className="ml-4 md:text-2xl text-lg font-semibold">
-              What I have worked on
+              technologies We have worked on
             </h2>
           </div>
           <div className="md:block hidden line w-full invert-side"></div>
         </div>
 
         <p className="md:my-16 my-8 md:text-base text-sm md:px-0 px-3 text-center text-secondary">
-          These are some of the technologies I have used and have great
+          These are some of the technologies We have used and have great
           familiarity with:
         </p>
 

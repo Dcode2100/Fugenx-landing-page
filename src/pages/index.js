@@ -33,7 +33,7 @@ export default function Home() {
           <Header />
           <About />
           <Knowledge />
-          <JobExperience />
+          {/* <JobExperience /> */}
           <Projects />
         </div>
         <Contact />

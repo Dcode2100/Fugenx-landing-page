@@ -128,17 +128,17 @@ export default function Projects() {
         ))}
       </div>
 
-      <a
+      {/* <a
         className="button mt-10 max-w-max flex items-center mx-auto mb-10"
         href="https://github.com/Dcode2100"
         target="_blank"
         rel="noreferrer"
       >
         <Github /> <span className="ml-2">My Repositries</span>
-      </a>
-      <div className="w-full flex justify-center ">
+      </a> */}
+      {/* <div className="w-full flex justify-center ">
         <GitHubCalendar username="dcode2100" />
-      </div>
+      </div> */}
     </section>
   );
 }

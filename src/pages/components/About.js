@@ -49,16 +49,16 @@ export default function About() {
   return (
     <section id="about" className="mt-64 relative">
       <h2 className="section-title mt-60" ref={ref}>
-        Dikshant
+        FUGENX
       </h2>
       <div className="mt-20 flex items-center">
         <div className="title flex items-center">
           <User />
           <h3 className="min-w-max md:ml-4 ml-2 md:text-2xl text-lg font-semibold">
-            About me
+            About Us
           </h3>
         </div>
-        <div className="line ml-6 w-full"></div>
+        <div className="line ml-6 w-full bg-primary"></div>
       </div>
 
       <div className="md:mt-20 mt-10 md:grid grid-flow-col grid-cols-3">
@@ -98,36 +98,7 @@ export default function About() {
           </ul>
         </div>
 
-        <div className="md:col-span-1 md:mt-0 mt-20">
-          <div className={`${styles.imgBox} mx-auto`}>
-            <Image className={styles.img} src={me} alt="photo of dikshant solanki" />
-            <Image
-              className={styles.imgGlass}
-              src={me}
-              alt="photo of dikshant solanki"
-            />
-            <div className={styles.squareImg}>
-              <div
-                className={`${styles.xBox} ${styles.animate} ${styles.delay3}`}
-              >
-                <div className={styles.x}>D</div>
-              </div>
-              <div
-                className={`${styles.xBox} ${styles.animate} ${styles.delay7}`}
-              >
-                <div className={styles.x}>D</div>
-              </div>
-              <div
-                className={`${styles.xBox} ${styles.animate} ${styles.delay11}`}
-              >
-                <div className={styles.x}>D</div>
-              </div>
-              <div className={`${styles.xBox} ${styles.animate}`}>
-                <div className={styles.x}>D</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );

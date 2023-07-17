@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#00FFB2",
+        "primary": "#54ADF3",
         "dark": "#0D0D0D",
         "light": "#F6F6F6",
       },
@@ -15,9 +15,9 @@ module.exports = {
         "sans": ["Inter", "sans-serif"],
       },
       textColor: {
-        "primary": "#EFEFEF",
+        "primary": "#54ADF3",
         "secondary": "#a7a7a7",
-        "tertiary": "#00FFB2"
+        "tertiary": "#54ADF3"
       }
     },
   },

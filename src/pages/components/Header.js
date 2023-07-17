@@ -59,28 +59,27 @@ export default function Header() {
 
   return (
     <header className="mx-auto md:max-w-6xl mt-20 relative">
-      <h2 className={`${styles.introduction} text-tertiary text-lg`}>
-        Hello, my name is.
+      <h2 className={`${styles.introduction} text-tertiary text-bl text-lg`}>
+        Hello, Welcome to
       </h2>
       <h1 className={`${styles.name} md:text-7xl text-5xl font-bold mt-5`}>
-        Dikshant Solanki
+       FUGENX
       </h1>
       <h2
-        className={`${styles.function} md:text-6xl text-3xl font-bold text-secondary mt-2`}
+        className={`${styles.function} md:text-4xl text-2xl font-bold text-secondary mt-2`}
       >
-        I am a <span className={styles.front}>Front-end </span>developer.
+        Fueled by <span className={styles.front}>Creativity</span>.
       </h2>
       <h3
         className={`${styles.description} text-secondary leading-loose max-w-2xl mt-8 md:text-base text-sm`}
       >
-        Specialized in modern front-end application development (occasionally
-        creating designs) that are responsive, high-performing, & good UI/UX.
+        We are a cutting-edge web development agency, renowned for creating sleek, responsive web applications with exceptional UI/UX. Our expertise lies in optimizing existing projects, delivering high-performance solutions that exceed expectations and provide seamless user experiences.
       </h3>
       <AnchorLink className="button mt-20 ml-0" href="#about">
-        <Arrow /> More about me
+        <Arrow /> More about us
       </AnchorLink>
       <span className={styles.x} ref={ref}>
-        D
+        X
       </span>
       <div className={styles.sphere}></div>
     </header>

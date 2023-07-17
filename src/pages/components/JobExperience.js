@@ -77,7 +77,7 @@ export default function JobExperience() {
 
     return (
         <section id="experience" className="mt-64 relative">
-            <h2 className="section-title" ref={ref}>Experience</h2>
+            <h2 className="section-title" ref={ref}>Our Projects</h2>
 
 
             <div className="mt-20 flex items-center">

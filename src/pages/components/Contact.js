@@ -41,8 +41,8 @@ export default function Contact() {
           Please contact me.
         </h2>
         <p className="md:my-10 my-6 max-w-xl mx-auto text-secondary leading-relaxed">
-          I am open to partnerships, projects,{" "}
-          <span className="text-primary">job opportunities</span>
+          I am open to partnerships, projects, {"  "}
+          <span className="text-primary"> { }job opportunities</span>
           or even something more! You can get in touch with me through my
           <a
             className="hover:text-tertiary hover:underline ml-2"
@@ -75,7 +75,7 @@ export default function Contact() {
           onClick={() =>(window.location.href='mailto:dikshantsolanki214@gmail.com@example.com')}
         >
           {" "}
-          <Mail /> Contact Me!
+          <Mail /> Contact Us
         </a>
       </div>
       <Image

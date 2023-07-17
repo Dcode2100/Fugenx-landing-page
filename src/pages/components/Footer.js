@@ -30,7 +30,7 @@ export default function Footer() {
                 </a>
             </div>
             <p className="md:text-base text-xs">
-                © {new Date().getFullYear()} Design & Development by <span className="text-tertiary">Dikshant Solanki</span> ❤️
+                © {new Date().getFullYear()} Design & Development by <span className="text-tertiary">FUGENX</span> ❤️
             </p>
         </footer>                                    
     )
