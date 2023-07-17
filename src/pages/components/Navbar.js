@@ -5,6 +5,7 @@ import styles from "../../../styles/Navbar.module.scss";
 import { gsap } from "gsap";
 import { useEffect, useState } from "react";
 import Link from "next/link";	
+import Image from "next/image";
 
 
 
@@ -44,9 +45,8 @@ export default function Navbar() {
                 <div className="md:px-12 mx-auto">
                     <div className="flex justify-between relative  z-30">
                         {/* <Logo></Logo> */}
-                        <Link href="/" className={`flex items-center ${styles.logo}`}>
-                            <span className="FUGEN">FUGEN</span>
-                            <span className={`text-tertiary text-5xl font-bold ${styles.logoX}`}>X</span>
+                        <Link href="/" className={`flex items-center `}>
+                           <Image src="/fugenx_logo.jpg" alt="logo" width={100} height={100} />
                            
                         </Link>
                         <div className="md:flex hidden space-x-3 items-center">
