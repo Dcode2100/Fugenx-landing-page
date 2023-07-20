@@ -64,27 +64,10 @@ export default function About() {
       <div className="md:mt-20 mt-10 md:grid grid-flow-col grid-cols-3">
         <div className="md:col-span-2">
           <p className=" text-secondary leading-relaxed">
-            My name is Dikshant Solanki. I have been constantly studying
-            technologies that can contribute to my projects and professional
-            ambitions. My initial projects were built using pure HTML5 and CSS3,
-            creating and recreating existing websites.
+          Welcome to FugenX, where we transform the web with innovative solutions for a continuously evolving world. As game-changers and digital revolutionaries, we live and breathe website creation, maintenance, and upgrades. With a dynamic team of tech enthusiasts, design wizards, and problem solvers, we turn your web dreams into reality. From tailored solutions across industries to staying at the forefront of cutting-edge technologies, we're your trusted partner on the path to online success. Let's embark on an exciting journey together and rewrite the rules of web success at FugenX, where innovation meets excellence.
           </p>
 
-          <p className="mt-4 text-secondary leading-relaxed">
-            I am 22 years old, graduated with a Bachelor's degree from Mumbai
-            University (2019-2023). Participated and served as President of the
-            committee of ISA, and managed national level event like Yantra and
-            VNPS.
-          </p>
-
-          <p className="mt-4 text-secondary leading-relaxed">
-            Specialized in Front-end and always seeking to improve, I have
-            worked on various aspects of web development, including Designing,
-            and the development of simple and scalable parts of applications. I
-            prioritize good UI/UX practices and utilize modern programming
-            languages and best practices.
-          </p>
-          <p className="mt-4 text-secondary leading-relaxed mb-4">
+          {/* <p className="mt-4 text-secondary leading-relaxed mb-4">
             Currently, I am deepening my knowledge in:
           </p>
           <ul
@@ -95,7 +78,7 @@ export default function About() {
             <li>Redux</li>
             <li>UI/UX Designing</li>
             <li>Typescript</li>
-          </ul>
+          </ul> */}
         </div>
 
       
