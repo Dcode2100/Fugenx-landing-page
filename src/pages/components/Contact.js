@@ -47,7 +47,7 @@ export default function Contact() {
           or even something more! You can get in touch with me through my
           <a
             className="hover:text-tertiary hover:underline ml-2"
-            href="mailto:dikshantsolanki214@gmail.com"
+            href="mailto:gokuladhikari2000@gmail.com"
           >
             Email
           </a>
@@ -70,10 +70,7 @@ export default function Contact() {
         </p>
         <a
           className="button mt-20 mx-auto cursor-pointer"
-          onClick={() =>
-            (window.location.href =
-              "mailto:dikshantsolanki214@gmail.com@example.com")
-          }
+          href="mailto:gokuladhikari2000@gmail.com"
         >
           {" "}
           <Mail /> Contact Us
