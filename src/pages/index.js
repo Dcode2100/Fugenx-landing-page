@@ -22,9 +22,9 @@ export default function Home() {
     <>
       <Head>
         <title>FugenX</title>
-
-        <meta name="author" content="Dikshant Solanki" />
-
+        <meta name="author" content="Fugnex" />
+        // icons
+        <link rel="icon" href="/fugenx_logo.png" />
         <meta charSet="utf-8" />
       </Head>
       <Navbar />
@@ -33,7 +33,6 @@ export default function Home() {
           <Header />
           <About />
           <Knowledge />
-          
           <Projects />
         </div>
         <Contact />

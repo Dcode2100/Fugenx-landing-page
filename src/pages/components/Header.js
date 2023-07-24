@@ -52,6 +52,7 @@ export default function Header() {
           end: "bottom -10%",
           scrub: true,
           toggleAction: "restart pause resume pause",
+          // markers: true,
         },
       }
     );
