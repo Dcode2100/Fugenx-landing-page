@@ -11,8 +11,8 @@ const Triangle = () => (
                     <feGaussianBlur stdDeviation="10.5" result="effect1_foregroundBlur_361_4"/>
                 </filter>
                 <linearGradient id="paint0_linear_361_4" x1="-74.7943" y1="-67.2377" x2="267.565" y2="237.049" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#00FFB2"/>
-                <stop offset="1" stopColor="#00FFB2" stopOpacity="0"/>
+                <stop stopColor="#54ADF3"/>
+                <stop offset="1" stopColor="#54ADF3" stopOpacity="0"/>
                 </linearGradient>
             </defs>
         </svg>

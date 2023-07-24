@@ -46,7 +46,7 @@ export default function Navbar() {
                     <div className="flex justify-between relative  z-30">
                         {/* <Logo></Logo> */}
                         <Link href="/" className={`flex items-center `}>
-                           <Image src="/fugenx_logo.jpg" alt="logo" width={100} height={100} />
+                           <Image src="/fugenx_logo.png" alt="logo" width={100} height={100} />
                            
                         </Link>
                         <div className="md:flex hidden space-x-3 items-center">
@@ -54,10 +54,10 @@ export default function Navbar() {
                             <AnchorLink className={styles.link} href='#knowlodge'>Knowledge</AnchorLink>
                             <AnchorLink className={styles.link} href='#projects'>Projects</AnchorLink>
                             <AnchorLink className={styles.link} href='#contact'>Contact</AnchorLink>
-                            <a className={`${styles.curriculum} flex items-center rounded-lg text-sm px-4 py-2`} href="/resume.pdf" target="_blank" rel="noreferrer">
+                            {/* <a className={`${styles.curriculum} flex items-center rounded-lg text-sm px-4 py-2`} href="/resume.pdf" target="_blank" rel="noreferrer">
                                 <Document></Document>
                                 <p className="ml-3">Resume</p>
-                            </a>
+                            </a> */}
                         </div>
                         <div className="md:hidden flex items-center">
                             <button 
@@ -80,10 +80,10 @@ export default function Navbar() {
                     <AnchorLink onClick={() => setMenuActive(!menuActive)} className="text-xl py-2 " href='#experience'>Experience</AnchorLink>
                     <AnchorLink onClick={() => setMenuActive(!menuActive)} className="text-xl py-2 " href='#projects'>Projects</AnchorLink>
                     <AnchorLink onClick={() => setMenuActive(!menuActive)} className="text-xl py-2 " href='#contact'>Contact</AnchorLink>
-                    <a className={`${styles.curriculum} flex items-center text-sm px-4 py-3 justify-center mt-10 rounded-lg`}  href="/resume.pdf" target="_blank" rel="noreferrer">
+                    {/* <a className={`${styles.curriculum} flex items-center text-sm px-4 py-3 justify-center mt-10 rounded-lg`}  href="/resume.pdf" target="_blank" rel="noreferrer">
                         <Document></Document>
                         <p className="ml-3">Resume</p>
-                    </a>
+                    </a> */}
                 </div>
                 <div className="noise"></div>
             </aside>
