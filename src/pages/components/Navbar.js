@@ -80,10 +80,10 @@ export default function Navbar() {
                     <AnchorLink onClick={() => setMenuActive(!menuActive)} className="text-xl py-2 " href='#experience'>Experience</AnchorLink>
                     <AnchorLink onClick={() => setMenuActive(!menuActive)} className="text-xl py-2 " href='#projects'>Projects</AnchorLink>
                     <AnchorLink onClick={() => setMenuActive(!menuActive)} className="text-xl py-2 " href='#contact'>Contact</AnchorLink>
-                    <a className={`${styles.curriculum} flex items-center text-sm px-4 py-3 justify-center mt-10 rounded-lg`}  href="/resume.pdf" target="_blank" rel="noreferrer">
+                    {/* <a className={`${styles.curriculum} flex items-center text-sm px-4 py-3 justify-center mt-10 rounded-lg`}  href="/resume.pdf" target="_blank" rel="noreferrer">
                         <Document></Document>
                         <p className="ml-3">Resume</p>
-                    </a>
+                    </a> */}
                 </div>
                 <div className="noise"></div>
             </aside>
