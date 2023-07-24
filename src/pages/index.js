@@ -23,7 +23,6 @@ export default function Home() {
       <Head>
         <title>FugenX</title>
         <meta name="author" content="Fugnex" />
-        // icons
         <link rel="icon" href="/fugenx_logo.png" />
         <meta charSet="utf-8" />
       </Head>
