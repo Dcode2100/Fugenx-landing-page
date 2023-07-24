@@ -41,7 +41,7 @@ export default function Contact() {
           Please contact me.
         </h2>
         <p className="md:my-10 my-6 max-w-xl mx-auto text-secondary leading-relaxed">
-          I am open to partnerships, projects, {"  "}
+          We are open to partnerships, projects, {"  "}
           <span className="text-primary"> { }job opportunities</span>
           or even something more! You can get in touch with me through my
           <a
