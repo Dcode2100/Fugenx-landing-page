@@ -25,18 +25,18 @@ export default function Navbar() {
             { opacity: 1, stagger: 0.2, duration: 0.4 },
             '<.5'
         )
-        .fromTo(
-            `.FUGEN`,
-            { opacity: 0, x: 20 },
-            { opacity: 1, x: 0, duration: 0.4 },
-            '<.5'
-        )
-        .fromTo(
-            `.xavier`,
-            { opacity: 0, x: -20 },
-            { opacity: 1, x: 0, duration: 0.4 },
-            '<.0'
-        )
+        // .fromTo(
+        //     `.FUGEN`,
+        //     { opacity: 0, x: 20 },
+        //     { opacity: 1, x: 0, duration: 0.4 },
+        //     '<.5'
+        // )
+        // .fromTo(
+        //     `.xavier`,
+        //     { opacity: 0, x: -20 },
+        //     { opacity: 1, x: 0, duration: 0.4 },
+        //     '<.0'
+        // )
     }, []);
 
     return (
@@ -46,7 +46,7 @@ export default function Navbar() {
                     <div className="flex justify-between relative  z-30">
                         {/* <Logo></Logo> */}
                         <Link href="/" className={`flex items-center `}>
-                           <Image src="/fugenx_logo.png" alt="logo" width={100} height={100} />
+                           <Image src="/fugenx_logo.png" alt="logo" width={70} height={70} />
                            
                         </Link>
                         <div className="md:flex hidden space-x-3 items-center">

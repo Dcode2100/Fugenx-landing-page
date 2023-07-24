@@ -29,21 +29,21 @@ export default function About() {
       }
     );
 
-    gsap.fromTo(
-      `.${styles.imgBox}`,
-      { scale: 0.1, opacity: 0 },
-      {
-        scale: 1,
-        opacity: 1,
-        scrollTrigger: {
-          trigger: el,
-          start: "top 150%",
-          end: "bottom 0%",
-          scrub: true,
-          toggleAction: "restart pause resume pause",
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   `.${styles.imgBox}`,
+    //   { scale: 0.1, opacity: 0 },
+    //   {
+    //     scale: 1,
+    //     opacity: 1,
+    //     scrollTrigger: {
+    //       trigger: el,
+    //       start: "top 150%",
+    //       end: "bottom 0%",
+    //       scrub: true,
+    //       toggleAction: "restart pause resume pause",
+    //     },
+    //   }
+    // );
   }, []);
 
   return (

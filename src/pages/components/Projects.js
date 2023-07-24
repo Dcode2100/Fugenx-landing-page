@@ -40,8 +40,8 @@ export default function Projects() {
         `https://gh-pinned-repos.egoist.dev/?username=dcode2100`
       );
       let data = await res.json();
-      console.log(data);
-      console.log(data.project);
+      // console.log(data);
+      // console.log(data.project);
       setProjects(data);
     } catch (err) {
       console.log(err);

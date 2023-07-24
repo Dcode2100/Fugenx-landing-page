@@ -42,7 +42,8 @@ export default function Contact() {
         </h2>
         <p className="md:my-10 my-6 max-w-xl mx-auto text-secondary leading-relaxed">
           We are open to partnerships, projects, {"  "}
-          <span className="text-primary"> { }job opportunities</span>
+          <span className="text-primary"> {}contracts</span>
+          <span> </span>
           or even something more! You can get in touch with me through my
           <a
             className="hover:text-tertiary hover:underline ml-2"
@@ -59,33 +60,33 @@ export default function Contact() {
           >
             Linkedin
           </a>
-          ou
+          or
           <a
-            className="hover:text-tertiary hover:underline ml-2"
-            href="https://github.com/Dcode2100"
-            target="_blank"
-            rel="noreferrer"
+            className="text-tertiary hover:underline ml-2"
+            href="tel:8097226289"
           >
-            GitHub
+            phone
           </a>
         </p>
         <a
           className="button mt-20 mx-auto cursor-pointer"
-          
-          onClick={() =>(window.location.href='mailto:dikshantsolanki214@gmail.com@example.com')}
+          onClick={() =>
+            (window.location.href =
+              "mailto:dikshantsolanki214@gmail.com@example.com")
+          }
         >
           {" "}
           <Mail /> Contact Us
         </a>
       </div>
       <Image
-        priority={0}
+        priority={1}
         className={`${styles.bg} select-none`}
         alt="background polygons"
         src={bgContact}
       />
       <Image
-        priority={0}
+        priority={1}
         className={`${styles.bgRight} md:block hidden select-none`}
         alt="background polygons"
         src={bgContact}
