@@ -1,3 +1,8 @@
+import React from "react";
+
+import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
+import { commonStyles } from "../commonStyles";
 import { useEffect, useState, useRef } from "react";
 import styles from "../../../styles/Projects.module.scss";
 import gsap from "gsap";
@@ -5,16 +10,76 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Mouse from "./icons/mouse";
 import Github from "./icons/github";
 import Link from "./icons/link";
-import GitHubCalendar from "react-github-calendar";
+
+import { SectionWrapper } from "../hoc";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Projects() {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        tiltMaxAngleX={45}
+        tiltMaxAngleY={45}
+        scale={1}
+        transitionSpeed={450}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      >
+        <div className="relative w-full h-[230px]">
+          <img
+            src={image}
+            alt="project_image"
+            className="w-full h-full object-cover rounded-2xl"
+          />
+
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={"/github.png"}
+                alt="source code"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
+    </motion.div>
+  );
+};
+
+const Works = () => {
   const ref = useRef(null);
-  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    callAPI();
+
     const el = ref.current;
     gsap.fromTo(
       el,
@@ -33,21 +98,6 @@ export default function Projects() {
     );
   }, []);
 
-  const callAPI = async () => {
-    try {
-      //   const res = await fetch(`https://api.github.com/users/dcode2100/repos`);
-      const res = await fetch(
-        `https://gh-pinned-repos.egoist.dev/?username=dcode2100`
-      );
-      let data = await res.json();
-      // console.log(data);
-      // console.log(data.project);
-      setProjects(data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   return (
     <section id="projects" className="mt-64 relative">
       <h2 className="section-title" ref={ref}>
@@ -63,82 +113,24 @@ export default function Projects() {
         </div>
         <div className="line ml-6 w-full"></div>
       </div>
+    
 
-      <div className="md:px-4 px-0 grid md:grid-cols-2 md:gap-4">
-        {projects.map((project, index) => (
-          <div
-            className={`${styles.project} md:mt-10 mt-4 overflow-hidden relative md:px-8 px-5 py-6 rounded-2xl`}
-            key={index}
-          >
-            <div className="md:flex-row justify-between items-center w-full relative z-10">
-              <div className="">
-                <div className="flex flex-row items-center">
-                  <h3 className="font-bold text-xl">{project.repo}</h3>
-                </div>
-
-                <div className="flex flex-row mt-4">
-                  <a
-                    href={project.link}
-                    aria-label="github"
-                    className="rounded-full bg-dark p-2 mr-2 cursor-pointer"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Github />
-                  </a>
-                  {/* {project.homepage != null && project.homepage != "" ? (
-                    <a
-                      href={project.homepage}
-                      aria-label="link"
-                      className="rounded-full bg-dark p-2"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Link />
-                    </a>
-                  ) : null} */}
-                </div>
-
-                <p className="my-6 bg-dark text-sm leading-loose flex rounded-md px-4 py-4 relative z-10 max-w-full ">
-                  <a
-                    href={project.website}
-                    aria-label="link"
-                    className="rounded-full bg-dark p-2 cursor-pointer flex"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Link /> LiveLink
-                  </a>
-                </p>
-
-                {/* <div className="flex flex-row flex-wrap">
-                  {project.topics.map((topic, index) => (
-                    <span
-                      className="px-2 py-1 font-normal text-sm text-tertiary rounded-md mr-2 mt-2"
-                      key={index}
-                    >
-                      {topic}
-                    </span>
-                  ))}
-                </div> */}
-              </div>
-            </div>
-            <div className="noise"></div>
-          </div>
-        ))}
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          we are delighted to present a selection of exceptional projects that reflect the expertise and experience of our company. Each project demonstrates our team's capability to solve complex challenges, utilize diverse technologies, and manage projects effectively. We take pride in offering real-world solutions that deliver tangible value to our clients.
+        </motion.p>
       </div>
 
-      {/* <a
-        className="button mt-10 max-w-max flex items-center mx-auto mb-10"
-        href="https://github.com/Dcode2100"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Github /> <span className="ml-2">My Repositries</span>
-      </a> */}
-      {/* <div className="w-full flex justify-center ">
-        <GitHubCalendar username="dcode2100" />
-      </div> */}
+      <div className="mt-20 flex flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} image={project.image} />
+        ))}
+      </div>
     </section>
   );
-}
+};
+
+export default SectionWrapper(Works, "");
