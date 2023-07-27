@@ -61,7 +61,7 @@
       source_code_link: "https://react-business-landing-page-umber.vercel.app/",
     },
     {
-      name: "Heliolambs - Business Landing Page",
+      name: "Modern UI/UX-Optimized Portfolio",
       description:
         "Introducing an impeccable portfolio showcasing a captivating blend of modern features, cutting-edge tools, and impressive technologies, all meticulously employed to leave a lasting impression.",
       tags: [
