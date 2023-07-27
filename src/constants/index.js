@@ -1,6 +1,27 @@
 
   const projects = [
     {
+      name: "FameOfName - Business Landing Page",
+      description:
+        " A business landing page designed for a leading company that offers specialized business analytics services..",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+     image: "/fon.png",
+      source_code_link: "https://fameofname.com/",
+    },
+    {
       name: "Enhancing Governance: Information Control System.",
       description:
         "A web application that allows admin to organize the news release to different category of supporter and assign task and control system.",
@@ -19,7 +40,7 @@
       source_code_link: "https://rss-tau-two.vercel.app/",
     },
     {
-      name: "Modern business landing page",
+      name: "Heliolambs - Business Landing Page",
       description:
         "Revolutionary UI/UX-Optimized Modero Landing Page: Delivering Unparalleled Company Value to Our Valued Customers.",
       tags: [
@@ -40,26 +61,27 @@
       source_code_link: "https://react-business-landing-page-umber.vercel.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Heliolambs - Business Landing Page",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Introducing an impeccable portfolio showcasing a captivating blend of modern features, cutting-edge tools, and impressive technologies, all meticulously employed to leave a lasting impression.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "restapi",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "scss",
           color: "pink-text-gradient",
         },
       ],
-     image: "/portfolio.png",
-      source_code_link: "https://vercel.com/dcode2100/portfolio-2-0",
+      image: "/harsh.png",
+      source_code_link: "https://harshs0ni.com"
     },
+    
   ];
   
   export { projects };
