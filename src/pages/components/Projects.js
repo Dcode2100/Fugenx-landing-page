@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { commonStyles } from "../commonStyles";
+import { commonStyles } from "../../commonStyles";
 import { useEffect, useState, useRef } from "react";
 import styles from "../../../styles/Projects.module.scss";
 import gsap from "gsap";
@@ -11,9 +11,9 @@ import Mouse from "./icons/mouse";
 import Github from "./icons/github";
 import Link from "./icons/link";
 
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../../hoc";
+import { projects } from "../../constants";
+import { fadeIn, textVariant } from "../../utils/motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
