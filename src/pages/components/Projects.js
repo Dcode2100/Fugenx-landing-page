@@ -1,14 +1,13 @@
 import React from "react";
-
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { commonStyles } from "../../commonStyles";
 import { useEffect, useState, useRef } from "react";
-import styles from "../../../styles/Projects.module.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Mouse from "./icons/mouse";
+import { commonStyles } from "../../commonStyles";
 import Github from "./icons/github";
+import styles from "../../../styles/Projects.module.scss";
 import Link from "./icons/link";
 
 import { SectionWrapper } from "../../hoc";
@@ -32,7 +31,7 @@ const ProjectCard = ({
         tiltMaxAngleY={45}
         scale={1}
         transitionSpeed={450}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:max-w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img

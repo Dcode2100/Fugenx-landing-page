@@ -20,7 +20,7 @@
     "react-dom": "18.2.0",
     "react-github-calendar": "^4.0.1",
     "react-icons": "^4.10.1",
-    "react-parallax-tilt": "^1.7.154",
+    "react-parallax-tilt": "^1.7.163",
     "sass": "^1.57.0",
     "styled-components": "^6.0.5"
   },
