@@ -47,7 +47,7 @@ export default function Navbar() {
           <div className="flex justify-between relative  z-30">
             {/* <Logo></Logo> */}
             <Link href="/" className={`flex items-center `}>
-              <Image src="/fugenx_logo.png" alt="logo" width={70} height={70} />
+              <Image src="/fugenx_logo.png" alt="logo" width={50} height={50} />
             </Link>
             <div className="md:flex hidden space-x-3 items-center">
               <AnchorLink className={styles.link} href="#about">
