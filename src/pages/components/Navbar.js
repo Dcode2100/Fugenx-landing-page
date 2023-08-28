@@ -110,13 +110,6 @@ export default function Navbar() {
           <AnchorLink
             onClick={() => setMenuActive(!menuActive)}
             className="text-xl py-2 "
-            href="#experience"
-          >
-            Experience
-          </AnchorLink>
-          <AnchorLink
-            onClick={() => setMenuActive(!menuActive)}
-            className="text-xl py-2 "
             href="#projects"
           >
             Projects
