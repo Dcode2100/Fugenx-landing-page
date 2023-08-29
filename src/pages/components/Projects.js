@@ -29,6 +29,13 @@ const ProjectCard = ({
       className=" max-sm:w-full w-[40%] "
       // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
+       <Tilt
+        tiltMaxAngleX={45}
+        tiltMaxAngleY={45}
+        scale={1}
+        transitionSpeed={450}
+        className="bg-tertiary p-5 rounded-2xl sm:max-w-[360px] w-full"
+      >
       <div className="relative  h-[230px]">
         <img
           src={image}
@@ -62,6 +69,7 @@ const ProjectCard = ({
           </p>
         ))}
       </div>
+      </Tilt>
     </motion.div>
   );
 };
