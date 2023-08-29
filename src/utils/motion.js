@@ -29,9 +29,8 @@ export const textVariant = (delay) => {
         opacity: 1,
         transition: {
           type: type,
-          delay: delay,
-          duration: duration,
-          ease: "easeOut",
+          duration: 0.5,
+          ease: "easeInOut",
         },
       },
     };

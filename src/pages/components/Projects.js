@@ -27,7 +27,7 @@ const ProjectCard = ({
   return (
     <motion.div
       className=" max-sm:w-full w-[40%] "
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <div className="relative  h-[230px]">
         <img
@@ -106,7 +106,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          // variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           we are delighted to present a selection of exceptional projects that
