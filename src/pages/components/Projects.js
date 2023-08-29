@@ -26,7 +26,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      className=" max-sm:w-full w-[40%] "
+      className="  "
       // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
        <Tilt
@@ -36,7 +36,7 @@ const ProjectCard = ({
         transitionSpeed={450}
         className="bg-tertiary p-5 rounded-2xl sm:max-w-[360px] w-full"
       >
-      <div className="relative  h-[230px]">
+      <div className="relative max-sm:w-full h-[230px]">
         <img
           src={image}
           alt="project_image"
@@ -126,7 +126,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-col gap-7 max-sm:gap-[5rem]">
+      <div className="mt-20 flex flex-col gap-7 max-sm:gap-[3rem]">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
