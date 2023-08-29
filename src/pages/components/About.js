@@ -47,7 +47,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="mt-64 relative">
+    <section id="about" className="mt-[18rem] relative">
       <h2 className="section-title mt-60" ref={ref}>
         FUGENX
       </h2>

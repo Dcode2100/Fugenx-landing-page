@@ -25,8 +25,11 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="relative w-full h-[230px]">
+    <motion.div
+      className=" max-sm:w-full w-[40%] "
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    >
+      <div className="relative  h-[230px]">
         <img
           src={image}
           alt="project_image"
@@ -115,7 +118,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-col gap-7 max-sm:gap-[5rem]">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
